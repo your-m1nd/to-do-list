@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/assets/styles/style.css">
     <title>To Do List</title>
   </head>
   <body>
@@ -11,11 +12,16 @@
       <img src="assets/images/itgirls.jpeg" alt="img" />
     </header>
     <main>
-      <div class="enter">
-        <input id="text" type="text" placeholder="Задача" />
-        <button onclick="createTask()">Добавить</button>
+      <div class="to_do">
+        <h2>Список задач</h2>
+        <div class="enter">
+          <input id="typeText" type="text" placeholder="Задача" value="" />
+          <input id="send" type="submit" value="Добавить" onclick="createTask()"></input>
+          <span id="warning"></span>
+        </div>
+        <ul id="ulList"></ul>
+        <input id="clear" type="submit" value="Очистить список" onclick="clearTasks()"></input>
       </div>
-      <ul id="list"></ul>
     </main>
     <script src="script.js"></script>
   </body>

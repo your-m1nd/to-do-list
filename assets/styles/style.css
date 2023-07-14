@@ -1,0 +1,8 @@
+#warning {
+    background-color: grey;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    width: 170px;
+}
+
