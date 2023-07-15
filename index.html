@@ -13,13 +13,15 @@
     </header>
     <main>
       <div class="to_do">
-        <h2>Список задач</h2>
+        <h2>Добавить задачу</h2>
         <div class="enter">
           <input id="typeText" type="text" placeholder="Задача" value="" />
           <input id="send" type="submit" value="Добавить" onclick="createTask()"></input>
           <span id="warning"></span>
         </div>
+        <h2>Список задач</h2>
         <ul id="ulList"></ul>
+        <div id="noTasks">Нет задач</div>
         <input id="clear" type="submit" value="Очистить список" onclick="clearTasks()"></input>
       </div>
     </main>

@@ -1,8 +1,33 @@
+body {
+    margin: 20px;
+}
+
+#send {
+    background-color:#ffc0cb;
+}
+
+li {
+    list-style-type: decimal;
+}
+
+#noTasks {
+    width: 190px;
+    height: 170px;
+    padding: 30px;
+    background-color:silver;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
 #warning {
     background-color: grey;
     margin-top: 10px;
     display: flex;
     flex-direction: column;
     width: 170px;
+}
+
+#clear {
+    margin-left: 50px;
 }
 
