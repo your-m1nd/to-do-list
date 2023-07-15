@@ -19,7 +19,6 @@ if (inputText.value === '') {
   let checkbox = document.createElement('input');
   checkbox.setAttribute('type', 'checkbox');
   li.appendChild(checkbox);
-  
   //очистить поле ввода задачи
   inputText.value = '';
 
@@ -33,4 +32,6 @@ if (inputText.value === '') {
 clear.onclick = function clearTasks(evt) {
   localStorage.clear();
   ulList.style = 'display: none';
+  clear.style = 'background-color: blanchedalmond';
+  noTasks.style = 'display: block';
 }
